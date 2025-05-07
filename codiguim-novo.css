@@ -885,6 +885,17 @@ body .new-checkout-summary-container .new-checkout-summary-container-header {bac
 
   /* RodapÃ© | Footer */
 
+/* Esconde completamente o rodapé nativo da Cartpanda */
+.footer,
+#cartx-section-footer,
+footer.footer {
+  display: none !important;
+  height: 0 !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+}
+
+
 /* Rodapé Vestyge unificado (desktop + mobile) */
 #cartx-section-footer {
   background: #144447 !important;
