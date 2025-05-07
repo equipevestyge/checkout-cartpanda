@@ -1,0 +1,129 @@
+
+:root {
+  --default_color: #3ebf90;
+  --white: #ffffff;
+  --black: #000000;
+  --silver: #aaabab;
+  --button_color: #3ebf90;
+  --button_text_color: white;
+  --box_left_bg: #fbfbfb;
+  --footer_bg: #144447;
+  --footer_selos: none;
+  --footer_cards: none;
+
+  --header_fixed: sticky;
+  --header_top: 0px;
+
+  --logo: #144447 url(https://cdn.shopify.com/s/files/1/0630/4838/4718/files/logo-vestyge-branca.png?v=1746636442);
+  --logo_size: 60px;
+  --logo_mb_size: 42px;
+  --logo_position: center;
+
+  --logo_text: 'COMPRA SEGURA';
+  --logo_mb_text: 'COMPRA \A SEGURA';
+  --logo_text_size: 20px;
+  --logo_mb_text_size: 15px;
+  --logo_text_bold: 700;
+  --logo_text_color: var(--default_color);
+
+  --bg: #ffffff url(http://wartproject.neocities.org/img/checkout-css/custom_css/cartpanda_v2/bg.jpg);
+  --bg_mb: var(--white);
+  --blur: 10px;
+
+  --br_box: 20px;
+  --br_button: 50px;
+  --br_input: 50px;
+
+  --topbar_ds: flex;
+  --topbar_text: 'Complete o checkout para finalizar seu pedido!';
+  --topbar_text_size: 15px;
+  --topbar_bg: var(--default_color);
+  --topbar_color: var(--white);
+
+  --footer_display: flex;
+
+  --footer_selos: url(none);
+  --footer_selos_size: 0px;
+  --footer_selos_height: 0px;
+
+  --footer_cards: url(https://cdn.shopify.com/s/files/1/0630/4838/4718/files/Formas_de_pagamento.png?v=1746644745);
+  --footer_cards_size: 300px;
+  --footer_cards_height: 70px;
+
+  --footer_mb_cards: url(https://cdn.shopify.com/s/files/1/0630/4838/4718/files/Formas_de_pagamento.png?v=1746644745);
+  --footer_cards_mb_size: 100%;
+  --footer_cards_mb_height: 90px;
+
+  --footer_mb_cards_text: '';
+  --footer_mb_cards_text_size: 10px;
+  --footer_mb_cards_text_color: white;
+
+  --footer_text: 'CNPJ: 43.362.921/0001-07' '\A\A ©️ Vestyge - Todos os direitos reservados';
+  --footer_text_size: 15px;
+
+  --footer_mb_text: 'CNPJ: 43.362.921/0001-07' '\A' '©️ Vestyge - Todos os direitos reservados';
+  --footer_text_mb_size: 13px;
+
+  --ico_customer: url(https://wartsites.neocities.org/img/Cartpanda/dados.svg);
+  --ico_shipping: url(https://wartsites.neocities.org/img/Cartpanda/truck.svg);
+  --ico_payment: url(https://wartsites.neocities.org/img/Cartpanda/card.svg);
+
+  --qty_button: flex;
+  --terms_ds: block;
+}
+
+/* MOBILE – esconde o texto */
+@media (max-width: 768px) {
+  :root {
+    --logo_mb_text: '';
+  }
+}
+
+/* DESKTOP – deixa o texto branco */
+@media (min-width: 769px) {
+  :root {
+    --logo_text_color: #ffffff;
+  }
+}
+
+/* Rodapé unificado Vestyge - desktop e mobile */
+#cartx-section-footer {
+  background-color: #144447 !important;
+  color: #ffffff !important;
+  padding: 40px 20px !important;
+  text-align: center !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 16px !important;
+}
+
+/* Título "Formas de pagamento" */
+#cartx-section-footer::before {
+  content: "Formas de pagamento";
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #ffffff;
+  display: block;
+}
+
+/* Ícones de pagamento SVG centralizados */
+#cartx-section-footer img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Textos: CNPJ e direitos */
+#cartx-section-footer p,
+#cartx-section-footer span,
+#cartx-section-footer div {
+  color: #ffffff !important;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+}
