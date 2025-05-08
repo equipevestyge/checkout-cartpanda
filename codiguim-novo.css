@@ -909,7 +909,7 @@ body .new-checkout-summary-container .new-checkout-summary-container-header {bac
 
 .footer-section::after {
   content: '';
-  background: url(https://cdn.shopify.com/s/files/1/0630/4838/4718/files/Formas_de_pagamento.png?v=1746644745);
+  background:'';
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
