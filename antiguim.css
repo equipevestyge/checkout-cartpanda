@@ -887,7 +887,7 @@ body .new-checkout-summary-container .new-checkout-summary-container-header {bac
 
   #cartx-section-footer {
       display: var(--footer_display);
-      background: var(--white);
+      background: #144447;
       width: 100%;
       margin: 0 auto;
       padding: 30px;
