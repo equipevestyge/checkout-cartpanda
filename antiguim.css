@@ -186,7 +186,7 @@ body .check-out-left [id*="cartx-section-continue_button"] {
       width: 100%;
       height: var(--logo_size);
       margin: 0 auto;
-      padding: 15px 20px;
+      padding: 25px 25px;
       font-size: var(--logo_text_size);
       font-weight: var(--logo_text_bold);
       color: var(--logo_text_color);
@@ -251,7 +251,7 @@ body .check-out-left [id*="cartx-section-continue_button"] {
       height: calc(var(--logo_mb_size) + 10px);
       margin: 0;
       top: 0;
-      padding: 15px 10px;
+      padding: 25px 25px;
       border-top: 0;
       border-bottom: 1px solid transparent;
       border-image: linear-gradient(to right, #00000000 0%, var(--white), #00000000 100%) 0 0 100% 0;
