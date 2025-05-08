@@ -883,54 +883,113 @@ body .new-checkout-summary-container .new-checkout-summary-container-header {bac
     }  
   }
 
-/* Esconde rodapé nativo duplicado */
-footer.footer:not(#cartx-section-footer),
-.footer {
-  display: none !important;
-}
+  /* RodapÃ© | Footer */
 
-/* Rodapé personalizado unificado */
-#cartx-section-footer {
-  background: #144447 !important;
-  color: #ffffff !important;
-  text-align: center !important;
-  padding: 32px 20px !important;
-  width: 100% !important;
-  box-sizing: border-box;
-  font-family: inherit;
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: center !important;
-  gap: 12px;
-}
-
-/* Título acima dos ícones */
+  #cartx-section-footer {
+      display: var(--footer_display);
+      background: #144447;
+      width: 100%;
+      margin: 0 auto;
+      padding: 30px;
+      border-top: 1px solid #e9e9e9;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+  }
+  #cartx-section-footer::after {
+      content: var(--footer_text);
+      display: block;
+      font-size: var(--footer_text_size);
+      color: #ffffff;
+      white-space: pre-wrap;
+      line-height: 1.8;
+      text-align: left;
+  } 
+  .footer-section::before {
+      content: '';
+      background:var(--footer_selos);
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 100%;
+      max-width: var(--footer_selos_size);
+      height: var(--footer_selos_height);
+      display: flex;
+      position: relative;
+      margin: 0 0 -20px 0;
+  }
+  .footer-section {
+    max-width: 50%;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .footer-section::after {
+      content:'';
+      background:var(--footer_cards);
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 100%;
+      max-width: var(--footer_cards_size);
+      height: var(--footer_cards_height);
+      display: flex;
+      position: relative;
+  }
 #cartx-section-footer::before {
   content: "Formas de pagamento";
-  font-size: 16px;
+  display: block;
+  text-align: center;
+  font-size: 14px;
   font-weight: 600;
   color: #ffffff;
-  margin-bottom: 4px;
-  display: block;
+  margin-bottom: 10px;
+  margin-top: 20px;
 }
-
-/* Ícones dos cartões */
-#cartx-section-footer img {
-  max-width: 300px;
-  height: auto;
-  display: block;
-  margin: 0 auto 12px;
-}
-
-#cartx-section-footer::after {
-  content: "CNPJ: 43.362.921/0001-07\A©️ Vestyge - Todos os direitos reservados";
-  white-space: pre-line;
-  font-size: 14px;
-  color: #ffffff;
-  text-align: center;
-  display: block;
-  margin-top: 10px;
-}
+  @media (min-width:769px) {
+  :has(.inner-checkout-left-three-step) #cartx-section-footer {
+      max-width: 1103px;
+      border: 1px solid #e9e9e9;
+      border-radius: var(--br_box)
+  }
+  }
+  @media (min-width:769px) and (max-width:1110px) {
+  :has(.inner-checkout-left-three-step) #cartx-section-footer {
+      max-width: 95%;
+  }
+  }  
+  @media (max-width:768px) {
+  #cartx-section-footer {justify-content: center}
+  #cartx-section-footer::before {
+    max-width: 100%;
+    margin: 0;
+  }
+  #cartx-section-footer::after {
+      content: var(--footer_mb_text);
+      display: block;
+      font-size: var(--footer_text_mb_size);
+      text-align: center;
+  }   
+  .footer-section {max-width: 100%}  
+  .footer-section::before {
+      max-width: 100%;
+      margin: 0;
+  }  
+  .footer-section::after {
+      content: var(--footer_mb_cards_text);
+      background: var(--footer_mb_cards);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      max-width: var(--footer_cards_mb_size);
+      height: var(--footer_cards_mb_height);
+      font-size: var(--footer_mb_cards_text_size);
+      font-weight: 800;
+      color: var(--footer_mb_cards_text_color);
+      justify-content: center;
+      align-items: center;
+      margin: 20px 0;
+    }  
+  }
 
 
   /* PÃ¡gina de PIX e Boleto */
