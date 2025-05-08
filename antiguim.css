@@ -935,7 +935,16 @@ body .new-checkout-summary-container .new-checkout-summary-container-header {bac
       display: flex;
       position: relative;
   }
-
+#cartx-section-footer::before {
+  content: "Formas de pagamento";
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
   @media (min-width:769px) {
   :has(.inner-checkout-left-three-step) #cartx-section-footer {
       max-width: 1103px;
