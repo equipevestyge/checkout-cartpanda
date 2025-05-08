@@ -985,7 +985,7 @@ footer.footer,
       color: var(--footer_mb_cards_text_color);
       justify-content: center;
       align-items: center;
-      margin: 0px 0;
+      margin: 10px 0;
     }  
   }
 
