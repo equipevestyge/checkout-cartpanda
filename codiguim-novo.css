@@ -922,7 +922,6 @@ footer.footer:not(#cartx-section-footer),
   margin: 0 auto 12px;
 }
 
-/* Texto após os cartões (CNPJ + Direitos) */
 #cartx-section-footer::after {
   content: "CNPJ: 43.362.921/0001-07\A©️ Vestyge - Todos os direitos reservados";
   white-space: pre-line;
