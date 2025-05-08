@@ -883,25 +883,13 @@ body .new-checkout-summary-container .new-checkout-summary-container-header {bac
     }  
   }
 
-/* Rodapé Vestyge completo (estático via CSS) */
-.footer,
-#cartx-section-footer,
-footer.footer {
-  display: none !important;
-  height: 0 !important;
-  visibility: hidden !important;
-  opacity: 0 !important;
-}
-
-/* Esconde o rodapé duplicado, se existir */
-body::after,
-body::before,
-.footer,
-footer.footer:not(#cartx-section-footer) {
+/* Esconde rodapé nativo duplicado */
+footer.footer:not(#cartx-section-footer),
+.footer {
   display: none !important;
 }
 
-/* Estiliza o rodapé nativo unificado */
+/* Rodapé personalizado unificado */
 #cartx-section-footer {
   background: #144447 !important;
   color: #ffffff !important;
@@ -910,36 +898,39 @@ footer.footer:not(#cartx-section-footer) {
   width: 100% !important;
   box-sizing: border-box;
   font-family: inherit;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
   gap: 12px;
 }
 
-/* Estilo do título */
-#cartx-section-footer .footer-title {
+/* Título acima dos ícones */
+#cartx-section-footer::before {
+  content: "Formas de pagamento";
   font-size: 16px;
   font-weight: 600;
-  margin-bottom: 8px;
   color: #ffffff;
+  margin-bottom: 4px;
+  display: block;
 }
 
-/* Imagem dos cartões */
+/* Ícones dos cartões */
 #cartx-section-footer img {
   max-width: 300px;
   height: auto;
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 12px;
 }
 
-/* CNPJ e direitos */
-#cartx-section-footer p,
-#cartx-section-footer span,
-#cartx-section-footer div {
-  color: #ffffff !important;
-  font-size: 13px;
-  margin: 0;
-  line-height: 1.5;
+/* Texto após os cartões (CNPJ + Direitos) */
+#cartx-section-footer::after {
+  content: "CNPJ: 43.362.921/0001-07\A©️ Vestyge - Todos os direitos reservados";
+  white-space: pre-line;
+  font-size: 14px;
+  color: #ffffff;
+  text-align: center;
+  display: block;
+  margin-top: 10px;
 }
 
 
