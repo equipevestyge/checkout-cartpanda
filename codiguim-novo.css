@@ -883,7 +883,48 @@ body .new-checkout-summary-container .new-checkout-summary-container-header {bac
     }  
   }
 
+/* Rodapé Vestyge completo (estático via CSS) */
+.footer,
+#cartx-section-footer,
+footer.footer {
+  display: none !important;
+  height: 0 !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+}
 
+/* Novo rodapé direto no CSS */
+body::after {
+  content: "";
+  display: block;
+  background: #144447;
+  padding: 32px 20px;
+  color: #ffffff;
+  text-align: center;
+  box-sizing: border-box;
+  width: 100vw;
+  max-width: 100vw;
+  margin: 0;
+  position: relative;
+}
+
+body::after {
+  content: "Formas de pagamento\n\n🖼\n\nCNPJ: 43.362.921/0001-07\n© Vestyge – Todos os direitos reservados";
+  white-space: pre-line;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #ffffff;
+}
+
+/* Substitui 🖼 por imagem real */
+body::after {
+  background-image: url('https://cdn.shopify.com/s/files/1/0630/4838/4718/files/card-vestyge.svg');
+  background-repeat: no-repeat;
+  background-position: center 45px;
+  background-size: 280px auto;
+  padding-top: 140px; /* espaço para a imagem */
+}
 
   /* PÃ¡gina de PIX e Boleto */
 
