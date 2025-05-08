@@ -900,7 +900,7 @@ body .new-checkout-summary-container .new-checkout-summary-container-header {bac
 }
 
 /* Título acima da imagem */
-#cartx-section-footer::before {
+#footer-section::before {
   content: "Formas de pagamento";
   display: block;
   text-align: center;
