@@ -900,15 +900,10 @@ body .new-checkout-summary-container .new-checkout-summary-container-header {bac
 }
 
 #cartx-section-footer::before {
-  all: none; /* limpa todos os estilos herdados */
-  content: "Formas de pagamento";
-  display: none;
-  text-align: center;
-  font-size: 16px;
-  font-weight: 600;
-  color: #ffffff;
-  margin-bottom: 10px;
+  display: none !important;
+  content: none !important;
 }
+
 
 
 /* Bloco com a imagem das bandeiras */
