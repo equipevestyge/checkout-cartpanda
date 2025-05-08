@@ -1,3 +1,9 @@
+/** Shopify CDN: Minification failed
+
+Line 814:33 Unexpected "input"
+Line 1049:0 Expected "}" to go with "{"
+
+**/
 /* Update 11/09/24 */
   
 /* Box Cupom  */  
@@ -86,13 +92,13 @@ html body.template-checkout .check-out-right #cartx-section-checkout-cost-detail
       fill: var(--default_color) !important
   }
 
-  /* Cor geral secundÃ¡ria */
+  /* Cor geral secundÃƒÂ¡ria */
 
   body[class*="template-"] .check-out-right .prdct-name h5, body[class*="template-"] .check-out-right .price-title, body[class*="template-"] .check-out-right .text-muted, body[class*="template-"] .checkoutTotal .text-muted, body[class*="template-"] .check-out-right .coupon_row .sub-legend, .prices_row.total-price, .prdcts_list .prdct-name .variant-name, body[class*="template-"] .check-out-right .prdct-qty .prdct_qty, body[class*="template-"] .check-out-right button.btn-number, body[class*="template-"] .check-out-right .prdct-price, .check-out-left .sub-legend, .checkSpan, .payment-method .panel-title a, .change-payment-section, .new-checkout-summary-container .new-checkout-summary-container-header .title i, .new-checkout-summary-container .new-checkout-summary-container-header .title span, .description-div div, .checkoutSubTotal.text-right.bolderFont {
       color: var(--black) !important;  
   }
 
-  /* Campos de entrada e botÃ£o */
+  /* Campos de entrada e botÃƒÂ£o */
 
   html body[class*="template-"] #complete-payment, 
   html body[class*="template-"] #loader-button, 
@@ -169,7 +175,7 @@ body .check-out-left [id*="cartx-section-continue_button"] {
   button:hover::after, .apply-coupon-btn-wrap:hover::after {animation: none}  
   }
 
-  /* CabeÃ§alho | Header */
+  /* CabeÃƒÂ§alho | Header */
   
   body .checkout-header-section {background: none !important}
 
@@ -199,7 +205,7 @@ body .check-out-left [id*="cartx-section-continue_button"] {
       white-space: pre;
       z-index: 1000;
   }
-  /* Borda colorida no cabeÃ§alho */
+  /* Borda colorida no cabeÃƒÂ§alho */
   body[class*="template-"]::before {
       content: '';
       background: var(--line_bg) no-repeat;
@@ -267,7 +273,7 @@ body .check-out-left [id*="cartx-section-continue_button"] {
   }  
   }
 
-  /* ConfiguraÃ§Ã£o geral dos lados */
+  /* ConfiguraÃƒÂ§ÃƒÂ£o geral dos lados */
 
   html body[class*="template-"] .check-out-left, body[class*="template-"] .check-out-right {
       background: #ffffffe3 !important;
@@ -371,7 +377,7 @@ body .payment-method .panel-heading[aria-expanded="true"] .dot-pr {
   @media (max-width:768px) {
   .backcart {margin: 20px 0 10px 3px}
   }
-  /* Ãcones */
+  /* ÃƒÂcones */
   .checkout-titles {
       font-size: 18px;
       font-weight: 600;
@@ -482,7 +488,7 @@ body .payment-method .panel-heading[aria-expanded="true"] .dot-pr {
       margin: 0 !important;
       padding: 0 !important;
   }
-  /* --> SeÃ§Ã£o Motivacional <-- */
+  /* --> SeÃƒÂ§ÃƒÂ£o Motivacional <-- */
   .motivator-inner span {
       background: var(--default_color) !important;
       font-size: 19px;
@@ -883,7 +889,7 @@ body .new-checkout-summary-container .new-checkout-summary-container-header {bac
     }  
   }
 
-  /* RodapÃ© | Footer */
+  /* RodapÃƒÂ© | Footer */
 
   #cartx-section-footer {
       display: var(--footer_display);
@@ -900,7 +906,7 @@ body .new-checkout-summary-container .new-checkout-summary-container-header {bac
       content: var(--footer_text);
       display: block;
       font-size: var(--footer_text_size);
-      color: #ffffff;
+      color: #FFFFFF;
       white-space: pre-wrap;
       line-height: 1.8;
       text-align: left;
@@ -935,6 +941,7 @@ body .new-checkout-summary-container .new-checkout-summary-container-header {bac
       display: flex;
       position: relative;
   }
+
 #cartx-section-footer::before {
   content: "Formas de pagamento";
   display: block;
@@ -944,7 +951,6 @@ body .new-checkout-summary-container .new-checkout-summary-container-header {bac
   color: #ffffff;
   margin-bottom: 10px;
   margin-top: 20px;
-}
   @media (min-width:769px) {
   :has(.inner-checkout-left-three-step) #cartx-section-footer {
       max-width: 1103px;
@@ -952,6 +958,7 @@ body .new-checkout-summary-container .new-checkout-summary-container-header {bac
       border-radius: var(--br_box)
   }
   }
+
   @media (min-width:769px) and (max-width:1110px) {
   :has(.inner-checkout-left-three-step) #cartx-section-footer {
       max-width: 95%;
@@ -991,7 +998,7 @@ body .new-checkout-summary-container .new-checkout-summary-container-header {bac
     }  
   }
 
-  /* PÃ¡gina de PIX e Boleto */
+  /* PÃƒÂ¡gina de PIX e Boleto */
 
 .pix-wrap .wrapper, .template-thankyou .wrapper {
       background: none !important;
@@ -1034,8 +1041,8 @@ body.template-thankyou .no-of-prdts {
   }
   
 /* 
-  CÃ³digo exclusivo WART
+  CÃƒÂ³digo exclusivo WART
   By: Walyson Patric
   Site: https://warts.com.br/
-  VersÃ£o 2 | Cartpanda
+  VersÃƒÂ£o 2 | Cartpanda
 */
