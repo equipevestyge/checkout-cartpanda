@@ -893,126 +893,53 @@ footer.footer {
   opacity: 0 !important;
 }
 
-/* Novo rodapé direto no CSS */
-body::after {
-  content: "";
-  display: block;
-  background: #144447;
-  padding: 32px 20px;
-  color: #ffffff;
-  text-align: center;
-  box-sizing: border-box;
-  width: 100vw;
-  max-width: 100vw;
-  margin: 0;
-  position: relative;
-}
-
-body::after {
-  content: "Formas de pagamento\n\n🖼\n\nCNPJ: 43.362.921/0001-07\n© Vestyge – Todos os direitos reservados";
-  white-space: pre-line;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.6;
-  color: #ffffff;
-}
-
-/* Substitui 🖼 por imagem real */
-body::after {
-  background-image: url('https://cdn.shopify.com/s/files/1/0630/4838/4718/files/card-vestyge.svg');
-  background-repeat: no-repeat;
-  background-position: center 45px;
-  background-size: 280px auto;
-  padding-top: 140px; /* espaço para a imagem */
-}
-
-/* Oculta rodapé nativo da Cartpanda */
-footer.footer,
-#cartx-section-footer,
-.footer {
+/* Esconde o rodapé duplicado, se existir */
+body::after,
+body::before,
+.footer,
+footer.footer:not(#cartx-section-footer) {
   display: none !important;
 }
 
-/* Rodapé Vestyge */
-#vestyge-footer {
-  background: #144447;
-  color: #ffffff;
-  text-align: center;
-  padding: 32px 20px;
-  font-family: inherit;
-  width: 100%;
+/* Estiliza o rodapé nativo unificado */
+#cartx-section-footer {
+  background: #144447 !important;
+  color: #ffffff !important;
+  text-align: center !important;
+  padding: 32px 20px !important;
+  width: 100% !important;
   box-sizing: border-box;
-}
-
-#vestyge-footer .footer-title {
-  font-size: 16px;
-  font-weight: 600;
-  margin-bottom: 12px;
-}
-
-#vestyge-footer .footer-img {
-  max-width: 280px;
-  width: 100%;
-  height: auto;
-  margin: 0 auto 12px;
-  display: block;
-}
-
-#vestyge-footer .footer-cnpj,
-#vestyge-footer .footer-copy {
-  font-size: 13px;
-  margin: 0;
-  line-height: 1.6;
-}
-
-
-/* Rodapé Vestyge unificado e centralizado */
-body::after {
-  content: "";
+  font-family: inherit;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  background: #144447;
-  color: #ffffff;
-  padding: 32px 20px;
-  gap: 14px;
-  box-sizing: border-box;
-  width: 100vw;
-  max-width: 100vw;
-  margin: 0;
-  font-size: 14px;
-  line-height: 1.6;
-  text-align: center;
-  position: relative;
+  gap: 12px;
 }
 
-/* Adiciona os elementos dentro do rodapé com pseudo-elementos */
-body::after {
-  content: "Formas de pagamento";
-}
-
-body::after::after {
-  content: "CNPJ: 43.362.921/0001-07\n© Vestyge – Todos os direitos reservados";
-  white-space: pre-line;
-  margin-top: 12px;
-  font-size: 13px;
+/* Estilo do título */
+#cartx-section-footer .footer-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
   color: #ffffff;
 }
 
-/* Cartões de pagamento como imagem */
-body::before {
-  content: "";
+/* Imagem dos cartões */
+#cartx-section-footer img {
+  max-width: 300px;
+  height: auto;
   display: block;
-  background-image: url('https://cdn.shopify.com/s/files/1/0630/4838/4718/files/card-vestyge.svg');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 300px;
-  height: 40px;
-  margin-bottom: 10px;
-  margin-top: 6px;
-  align-self: center;
+  margin: 0 auto;
+}
+
+/* CNPJ e direitos */
+#cartx-section-footer p,
+#cartx-section-footer span,
+#cartx-section-footer div {
+  color: #ffffff !important;
+  font-size: 13px;
+  margin: 0;
+  line-height: 1.5;
 }
 
 
