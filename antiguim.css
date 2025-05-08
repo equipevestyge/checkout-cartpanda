@@ -935,6 +935,7 @@ footer.footer,
       background-repeat: no-repeat;
       background-position: center;
       width: 100%;
+      color: #ffffff;
       max-width: var(--footer_cards_size);
       height: var(--footer_cards_height);
       display: flex;
