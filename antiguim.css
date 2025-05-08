@@ -900,7 +900,7 @@ body .new-checkout-summary-container .new-checkout-summary-container-header {bac
       content: var(--footer_text);
       display: block;
       font-size: var(--footer_text_size);
-      color: #000000;
+      color: #ffffff;
       white-space: pre-wrap;
       line-height: 1.8;
       text-align: left;
