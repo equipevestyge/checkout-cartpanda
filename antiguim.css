@@ -191,7 +191,7 @@ body .check-out-left [id*="cartx-section-continue_button"] {
       font-weight: var(--logo_text_bold);
       color: var(--logo_text_color);
       border: 0px solid #efefef;
-      box-shadow: 0 10px 20px -19px black;
+      box-shadow: 0 20px 20px 20px black;
       justify-content: flex-end;
       align-items: center;
       white-space: pre;
