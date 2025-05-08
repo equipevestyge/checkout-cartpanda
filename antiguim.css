@@ -938,7 +938,7 @@ footer.footer,
       color: #ffffff;
       max-width: var(--footer_cards_size);
       height: var(--footer_cards_height);
-      display: flex;
+      display: center;
       position: relative;
   }
 
