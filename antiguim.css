@@ -1030,6 +1030,28 @@ body.template-thankyou .no-of-prdts {
   }
   .content-box__row.hidden {display: none}  
   }
+
+@media (min-width: 769px) {
+  #cartx-section-footer img {
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center !important;
+  }
+
+  #cartx-section-footer {
+    text-align: center !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  #cartx-section-footer::before {
+    text-align: center !important;
+    display: block;
+    width: 100%;
+  }
+}
+
   
 /* 
   CÃƒÂ³digo exclusivo WART
