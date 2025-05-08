@@ -957,12 +957,28 @@ body .new-checkout-summary-container .new-checkout-summary-container-header {bac
       max-width: 95%;
   }
   }  
-  @media (max-width:768px) {
-  #cartx-section-footer {justify-content: center}
-  #cartx-section-footer::before {
-    max-width: 100%;
-    margin: 0;
+@media (max-width:768px) {
+  #cartx-section-footer {
+    justify-content: center;
+    flex-direction: column;
+    gap: 12px;
   }
+
+  #cartx-section-footer::before {
+    margin-bottom: 0;
+  }
+
+  .footer-section {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .footer-section::after {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
   #cartx-section-footer::after {
       content: var(--footer_mb_text);
       display: block;
