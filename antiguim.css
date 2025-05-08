@@ -961,6 +961,7 @@ footer.footer,
   }
   #cartx-section-footer::after {
       content: var(--footer_mb_text);
+      color: #ffffff !important;
       display: block;
       font-size: var(--footer_text_mb_size);
       text-align: center;
