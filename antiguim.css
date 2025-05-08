@@ -1,11 +1,3 @@
-/** Shopify CDN: Minification failed
-
-Line 814:33 Unexpected "input"
-Line 1049:0 Expected "}" to go with "{"
-
-**/
-/* Update 11/09/24 */
-  
 /* Box Cupom  */  
 body.template-checkout .coupon_success {
     display: flex;
@@ -889,11 +881,10 @@ body .new-checkout-summary-container .new-checkout-summary-container-header {bac
     }  
   }
 
-
-/* RodapÃ© | Footer */
+  /* RodapÃƒÂ© | Footer */
 
   #cartx-section-footer {
-      display: var(--footer_display):none;
+      display: var(--footer_display);
       background: #144447;
       width: 100%;
       margin: 0 auto;
@@ -907,7 +898,7 @@ body .new-checkout-summary-container .new-checkout-summary-container-header {bac
       content: var(--footer_text);
       display: block;
       font-size: var(--footer_text_size);
-      color: #ffffff;
+      color: #000000;
       white-space: pre-wrap;
       line-height: 1.8;
       text-align: left;
@@ -942,16 +933,7 @@ body .new-checkout-summary-container .new-checkout-summary-container-header {bac
       display: flex;
       position: relative;
   }
-#cartx-section-footer::before {
-  content: "Formas de pagamento";
-  display: block;
-  text-align: center;
-  font-size: 14px;
-  font-weight: 600;
-  color: #ffffff;
-  margin-bottom: 10px;
-  margin-top: 20px;
-}
+
   @media (min-width:769px) {
   :has(.inner-checkout-left-three-step) #cartx-section-footer {
       max-width: 1103px;
@@ -998,7 +980,6 @@ body .new-checkout-summary-container .new-checkout-summary-container-header {bac
     }  
   }
 
-  
   /* PÃƒÂ¡gina de PIX e Boleto */
 
 .pix-wrap .wrapper, .template-thankyou .wrapper {
