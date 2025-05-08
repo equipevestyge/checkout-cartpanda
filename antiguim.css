@@ -892,7 +892,7 @@ footer.footer,
   text-align: center !important;
   display: flex !important;
   flex-direction: column !important;
-  align-items: left !important;
+  align-items: center !important;
   gap: 12px;
   box-sizing: border-box;
   width: 100% !important;
@@ -985,7 +985,7 @@ footer.footer,
       color: var(--footer_mb_cards_text_color);
       justify-content: center;
       align-items: center;
-      margin: 20px 0;
+      margin: 0px 0;
     }  
   }
 
