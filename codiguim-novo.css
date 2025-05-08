@@ -926,15 +926,45 @@ body::after {
   padding-top: 140px; /* espaço para a imagem */
 }
 
-/* Esconde o rodapé nativo da Cartpanda */
-.footer,
+/* Oculta rodapé nativo da Cartpanda */
+footer.footer,
 #cartx-section-footer,
-footer.footer {
+.footer {
   display: none !important;
-  height: 0 !important;
-  opacity: 0 !important;
-  visibility: hidden !important;
 }
+
+/* Rodapé Vestyge */
+#vestyge-footer {
+  background: #144447;
+  color: #ffffff;
+  text-align: center;
+  padding: 32px 20px;
+  font-family: inherit;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#vestyge-footer .footer-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+#vestyge-footer .footer-img {
+  max-width: 280px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto 12px;
+  display: block;
+}
+
+#vestyge-footer .footer-cnpj,
+#vestyge-footer .footer-copy {
+  font-size: 13px;
+  margin: 0;
+  line-height: 1.6;
+}
+
 
 /* Rodapé Vestyge unificado e centralizado */
 body::after {
