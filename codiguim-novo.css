@@ -899,16 +899,16 @@ body .new-checkout-summary-container .new-checkout-summary-container-header {bac
   box-sizing: border-box;
 }
 
-/* Título acima da imagem */
-#footer-section::before {
+#cartx-section-footer::before {
   content: "Formas de pagamento";
   display: block;
   text-align: center;
   font-size: 16px;
   font-weight: 600;
   color: #ffffff;
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
+
 
 /* Bloco com a imagem das bandeiras */
 .footer-section {
